@@ -7,13 +7,25 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="SpringSecurity" />
+        <module name="spring-security-cookbook-oauth2" />
+        <module name="spring-security-cookbook-jdbc" />
+        <module name="spring-security-cookbook-dao" />
+        <module name="spring-security-cookbook-session-jdbc" />
+        <module name="spring-security-cookbook-inmemory" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="session-redis" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="SpringSecurity" options="-parameters" />
+      <module name="SpringSecurity" options="" />
+      <module name="spring-security-cookbook-dao" options="-parameters" />
+      <module name="spring-security-cookbook-inmemory" options="-parameters" />
+      <module name="spring-security-cookbook-jdbc" options="-parameters" />
+      <module name="spring-security-cookbook-oauth2" options="-parameters" />
+      <module name="spring-security-cookbook-session-jdbc" options="-parameters" />
     </option>
   </component>
 </project>
